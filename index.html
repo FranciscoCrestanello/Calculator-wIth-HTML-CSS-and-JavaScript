@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Calculator with JavaScript</title>
+</head>
+<body class="body">
+    <header>
+        <h1>Calculator with HTML, CSS and JavaScript</h1>
+    </header>
+    <article>
+        <section class="container">
+            <div class="texts">
+                <input type="Text" readonly="" placeholder="0" class="texts__input" id="number1" name="number1">
+                <input type="Text" readonly="" class="texts__input texts__operator" id="operator" name="operator">
+                <input type="Text" readonly="" placeholder="0" class="texts__input" id="number2" name="number2">
+            </div>
+            <div class="numbers">
+                <div class="caja1">
+                    <button onclick="CalculatorFunction('1')" class="number">1</button>
+                    <button onclick="CalculatorFunction('2')" class="number">2</button>
+                    <button onclick="CalculatorFunction('3')" class="number">3</button>
+                </div>
+                <div class="caja2">
+                    <button onclick="CalculatorFunction('4')" class="number">4</button>
+                    <button onclick="CalculatorFunction('5')" class="number">5</button>
+                    <button onclick="CalculatorFunction('6')" class="number">6</button>
+                </div>
+                <div class="caja3">
+                    <button onclick="CalculatorFunction('7')" class="number">7</button>
+                    <button onclick="CalculatorFunction('8')" class="number">8</button>
+                    <button onclick="CalculatorFunction('9')" class="number">9</button>
+                </div>
+                <div class="caja4">
+                    <button onclick="CalculatorFunction('0')" class="button0 number">0</button>
+                </div>
+            </div>
+            <div class="actions">
+                <button onclick="CalculatorFunction('delete')" class="actions__button buttonDelete">Delete</button>
+                <div class="div">
+                    <button onclick="CalculatorFunction('+')" class="actions__button">+</button>
+                    <button onclick="CalculatorFunction('-')" class="actions__button">-</button>
+                </div>
+                <div class="div">
+                    <button onclick="CalculatorFunction('*')" class="actions__button">*</button>
+                    <button onclick="CalculatorFunction('/')" class="actions__button">/</button>
+                </div>
+                <button onclick="CalculatorFunction('=')" class="actions__button buttonIgual">=</button>
+            </div>
+        </section>
+    </article>
+    <script src="app.js"></script>
+</body>
+</html>

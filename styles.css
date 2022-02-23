@@ -1,0 +1,92 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-size: 18px;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.body {
+    background-color: #000000;
+    background-image: linear-gradient(315deg, #000000 0%, #414141 74%);
+    background-repeat: no-repeat;
+    height: 100vh;
+}
+
+h1 {
+    margin: 20px 0px;
+    text-align: center;
+    font-size: 2em;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: 80px 200px 200px;
+    border: 3px solid #000;
+    margin: 0px 500px;
+}
+
+.numbers {
+    grid-column: 1 / span 3;
+    grid-row: 2 / span 2;
+
+    /* FLEXBOX*/
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+}
+.actions {
+    grid-column: 4 / span 2;
+    grid-row: 2 / span 2;
+    /* FLEXBOX */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-right: 30px;
+}
+
+/* TEXTS */
+
+.texts {
+    grid-column: 1 / span 5;
+    grid-row: 1 / span 1;
+    display: flex;
+    border-bottom: 2px solid #000;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 10px;
+}
+.texts__input {
+    margin: 10px;
+    height: 30px;
+    width: 200px;
+    border-radius: 30px;
+    background-color: #959595;
+    text-align: center;
+}
+.texts__operator {
+    width: 50px;
+}
+
+/* BUTTONS */
+button {
+    width: 80px;
+    height: 80px;
+    font-size: 2em;
+}
+
+.buttonDelete, .buttonIgual {
+    width: 100%;
+    margin: 10px 0px;
+}
+.button0 {
+    width: 250px;
+}
+
+
+
+/* PRUEBAS */
